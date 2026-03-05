@@ -1,13 +1,8 @@
-Version: 1.0
 
-RestoreWorkspace: Default
-SaveWorkspace: Default
-AlwaysSaveHistory: Default
+fivenum(HINTSData_2020_clean$Age, na.rm = TRUE)
 
-EnableCodeIndexing: Yes
-UseSpacesForTab: Yes
-NumSpacesForTab: 2
-Encoding: UTF-8
+mean(HINTSData_2020_clean$Age, na.rm = TRUE)
 
-RnwWeave: Sweave
-LaTeX: pdfLaTeX
+sd(HINTSData_2020_clean$Age, na.rm = TRUE)
+
+var(HINTSData_2020_clean$Age, na.rm = TRUE)
