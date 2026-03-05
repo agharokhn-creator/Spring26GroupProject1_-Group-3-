@@ -15,3 +15,9 @@ fivenum(HINTSData_2020_clean$WeeklyMinutesModerateExercise)
 mean(HINTSData_2020_clean$WeeklyMinutesModerateExercise)
 sd(HINTSData_2020_clean$WeeklyMinutesModerateExercise)
 var(HINTSData_2020_clean$WeeklyMinutesModerateExercise)
+
+#Average drinks per week
+fivenum(HINTSData_2020_clean$AvgDrinksPerWeek)
+mean(HINTSData_2020_clean$AvgDrinksPerWeek)
+sd(HINTSData_2020_clean$AvgDrinksPerWeek)
+var(HINTSData_2020_clean$AvgDrinksPerWeek)
