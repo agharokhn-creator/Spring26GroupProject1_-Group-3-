@@ -1,7 +1,17 @@
-fivenum(HINTSData_2020_clean$Age, na.rm = TRUE)
+#Age
+fivenum(HINTSData_2020_clean$Age)
+mean(HINTSData_2020_clean$Age)
+sd(HINTSData_2020_clean$Age)
+var(HINTSData_2020_clean$Age)
 
-mean(HINTSData_2020_clean$Age, na.rm = TRUE)
+#BMI
+fivenum(HINTSData_2020_clean$BMI)
+mean(HINTSData_2020_clean$BMI)
+sd(HINTSData_2020_clean$BMI)
+var(HINTSData_2020_clean$BMI)
 
-sd(HINTSData_2020_clean$Age, na.rm = TRUE)
-
-var(HINTSData_2020_clean$Age, na.rm = TRUE)
+#Weekly minutes of exercise
+fivenum(HINTSData_2020_clean$WeeklyMinutesModerateExercise)
+mean(HINTSData_2020_clean$WeeklyMinutesModerateExercise)
+sd(HINTSData_2020_clean$WeeklyMinutesModerateExercise)
+var(HINTSData_2020_clean$WeeklyMinutesModerateExercise)
