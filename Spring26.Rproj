@@ -1,4 +1,3 @@
-
 fivenum(HINTSData_2020_clean$Age, na.rm = TRUE)
 
 mean(HINTSData_2020_clean$Age, na.rm = TRUE)
