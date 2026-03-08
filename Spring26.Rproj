@@ -1,23 +1,23 @@
 #Age
-fivenum(HINTSData_2020_clean$Age)
-mean(HINTSData_2020_clean$Age)
-sd(HINTSData_2020_clean$Age)
-var(HINTSData_2020_clean$Age)
+fivenum(HINTSData_2020_clean$Age) #18  43  58  68 100
+mean(HINTSData_2020_clean$Age) #55.59117
+sd(HINTSData_2020_clean$Age) #16.57902
+var(HINTSData_2020_clean$Age) #274.864
 
 #BMI
-fivenum(HINTSData_2020_clean$BMI)
-mean(HINTSData_2020_clean$BMI)
-sd(HINTSData_2020_clean$BMI)
-var(HINTSData_2020_clean$BMI)
+fivenum(HINTSData_2020_clean$BMI)#10.9 24.0 27.5 31.9 73.8
+mean(HINTSData_2020_clean$BMI)#28.60704
+sd(HINTSData_2020_clean$BMI)#6.538369
+var(HINTSData_2020_clean$BMI)#42.75028
 
 #Weekly minutes of exercise
-fivenum(HINTSData_2020_clean$WeeklyMinutesModerateExercise)
-mean(HINTSData_2020_clean$WeeklyMinutesModerateExercise)
-sd(HINTSData_2020_clean$WeeklyMinutesModerateExercise)
-var(HINTSData_2020_clean$WeeklyMinutesModerateExercise)
+fivenum(HINTSData_2020_clean$WeeklyMinutesModerateExercise)#  0    0   90  210 4620
+mean(HINTSData_2020_clean$WeeklyMinutesModerateExercise)#161.7818
+sd(HINTSData_2020_clean$WeeklyMinutesModerateExercise)#271.1893
+var(HINTSData_2020_clean$WeeklyMinutesModerateExercise)#73543.61
 
 #Average drinks per week
-fivenum(HINTSData_2020_clean$AvgDrinksPerWeek)
-mean(HINTSData_2020_clean$AvgDrinksPerWeek)
-sd(HINTSData_2020_clean$AvgDrinksPerWeek)
-var(HINTSData_2020_clean$AvgDrinksPerWeek)
+fivenum(HINTSData_2020_clean$AvgDrinksPerWeek)#0  0  0  4 70
+mean(HINTSData_2020_clean$AvgDrinksPerWeek)#3.358035
+sd(HINTSData_2020_clean$AvgDrinksPerWeek)#6.588142
+var(HINTSData_2020_clean$AvgDrinksPerWeek)#43.40362
