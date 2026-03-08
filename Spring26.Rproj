@@ -21,3 +21,15 @@ fivenum(HINTSData_2020_clean$AvgDrinksPerWeek)#0  0  0  4 70
 mean(HINTSData_2020_clean$AvgDrinksPerWeek)#3.358035
 sd(HINTSData_2020_clean$AvgDrinksPerWeek)#6.588142
 var(HINTSData_2020_clean$AvgDrinksPerWeek)#43.40362
+
+HINTSData_2020_clean %>%
+  group_by(smokeStat) %>%
+  summarise(
+    Age_min = min(Age, na.rm = TRUE),
+    Age_Q1 = quantile(Age, 0.25, na.rm = TRUE),
+    Age_median = median(Age, na.rm = TRUE),
+    Age_Q3 = quantile(Age, 0.75, na.rm = TRUE),
+    Age_max = max(Age, na.rm = TRUE),
+    Age_mean = mean(Age, na.rm = TRUE), 
+    Age_sd = sd(Age, na.rm = TRUE),
+    Age_var = var(Age, na.rm = TRUE),  )
