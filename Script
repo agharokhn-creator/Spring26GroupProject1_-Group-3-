@@ -107,3 +107,17 @@ ggplot(HINTSData_2020_clean, aes(x = RaceEthn5)) +
       y = "Count") +
     theme_classic()
   
+ggplot(HINTSData_2020_clean, aes(x = Age)) +
+    geom_histogram(binwidth = 5,
+                   fill = "blue",
+                   color = "black") +
+    labs(title = "Age Distribution", x = "Age", y = "Frequency") +
+    theme_classic()
+
+ggplot(HINTSData_2020_clean, aes(y = BMI)) +
+    geom_boxplot(fill = "darkgreen") +
+    labs(
+      title = "BMI Distribution",
+      y = "BMI" ) +
+    theme_minimal()
+  
