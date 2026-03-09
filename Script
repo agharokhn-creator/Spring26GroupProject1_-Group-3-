@@ -119,7 +119,7 @@ library(ggplot2) #loading ggplot2 package to be able to create the visualization
 ggplot(HINTSData_2020_clean, aes(x = QualityCare)) + #setting the data and putting QualityCare on the x-axis
     geom_bar(fill = "black") + #making bars to show the amount per category
     labs(title = "Distribution of Quality of Care Ratings", x = "Quality of Care", y = "Count") + #adding labels and title
-    theme_classic #applying a visual theme
+    theme_classic() #applying a visual theme
 #The bar chart is meant to display how many participants gave each rating
 #Based on the bar chart, about 750 participants gave a rating of 1
 #Based on the bar chart, about 1000 participants gave a rating of 2
@@ -128,13 +128,20 @@ ggplot(HINTSData_2020_clean, aes(x = QualityCare)) + #setting the data and putti
 #Based on the bar chart, about 20 participants gave a rating of 5
 #Majority of participants gave a QualityCare rating of 2, based on the bar chart
 
-ggplot(HINTSData_2020_clean, aes(x = RaceEthn5)) +
-    geom_bar(fill = "green") +
-    labs(
-      title = "Distribution of Race and Ethnicity",
-      x = "Race/Ethnicity",
-      y = "Count") +
-    theme_classic()
+ggplot(HINTSData_2020_clean, aes(x = RaceEthn5)) + #setting the data and putting RaceThn5 on the x-axis
+    geom_bar(fill = "green") + #making bars to show the amount per category
+    labs( #adding labels to the plot
+      title = "Distribution of Race and Ethnicity", #adding title of the plot
+      x = "Race/Ethnicity", #label for x-axis
+      y = "Count") + #label for y-axis
+    theme_classic() #applying a visual theme
+#The bar chart is meant to display how many participants are apart of certain race/ethnic groups
+#Based on the bar chart, about 1500 participants are a part of the first racial group
+#Based on the bar chart, about 275 participants are a part of the second racial group
+#Based on the bar chart, about 400 participants are a part of the third racial group
+#Based on the bar chart, about 30 participants are a part of the fourth racial group
+#Based on the bar chart, about 25 partcipants are a part of the fourth racial group
+#Majority of the particiapants are a part of the first racial group
   
 ggplot(HINTSData_2020_clean, aes(x = Age)) +
     geom_histogram(binwidth = 5,
