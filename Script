@@ -9,9 +9,13 @@ sd(HINTSData_2020_clean$Age) #16.57902
 var(HINTSData_2020_clean$Age) #274.864 
 
 #BMI
+#Five-number summary for BMI
 fivenum(HINTSData_2020_clean$BMI)#10.9 24.0 27.5 31.9 73.8
+#Mean BMI of respondents
 mean(HINTSData_2020_clean$BMI)#28.60704
+#Standard deviation of BMI
 sd(HINTSData_2020_clean$BMI)#6.538369
+#Variance of BMI
 var(HINTSData_2020_clean$BMI)#42.75028
 
 #Weekly minutes of exercise
