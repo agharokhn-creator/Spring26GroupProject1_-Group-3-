@@ -42,14 +42,14 @@ var(HINTSData_2020_clean$AvgDrinksPerWeek)
 HINTSData_2020_clean %>%  
   group_by(smokeStat) %>%  #Group respondents by smoking status
   summarise(
-    Age_min = min(Age, na.rm = TRUE),
-    Age_Q1 = quantile(Age, 0.25, na.rm = TRUE),
-    Age_median = median(Age, na.rm = TRUE),
-    Age_Q3 = quantile(Age, 0.75, na.rm = TRUE),
-    Age_max = max(Age, na.rm = TRUE),
-    Age_mean = mean(Age, na.rm = TRUE), 
-    Age_sd = sd(Age, na.rm = TRUE),
-    Age_var = var(Age, na.rm = TRUE),  )
+    Age_min = min(Age, na.rm = TRUE),  #Minimum age within group
+    Age_Q1 = quantile(Age, 0.25, na.rm = TRUE),  #First quartile
+    Age_median = median(Age, na.rm = TRUE),  #Median age
+    Age_Q3 = quantile(Age, 0.75, na.rm = TRUE),  #Third quartile
+    Age_max = max(Age, na.rm = TRUE),  #Maximum age
+    Age_mean = mean(Age, na.rm = TRUE),  #Average age
+    Age_sd = sd(Age, na.rm = TRUE),  #Standard deviation
+    Age_var = var(Age, na.rm = TRUE),  )  #Variance
 
 HINTSData_2020_clean %>%
   group_by(smokeStat) %>%
