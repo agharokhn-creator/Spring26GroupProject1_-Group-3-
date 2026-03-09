@@ -89,3 +89,21 @@ my_summary_func(HINTSData_2020_clean$Age)
 my_summary_func(HINTSData_2020_clean$BMI)
 my_summary_func(HINTSData_2020_clean$WeeklyMinutesModerateExercise)
 my_summary_func(HINTSData_2020_clean$AvgDrinksPerWeek)
+
+#Univariate Visualization
+
+library(ggplot2)
+  
+ggplot(HINTSData_2020_clean, aes(x = QualityCare)) +
+    geom_bar(fill = "black") +
+    labs(title = "Distribution of Quality of Care Ratings", x = "Quality of Care", y = "Count") +
+    theme_classic
+
+ggplot(HINTSData_2020_clean, aes(x = RaceEthn5)) +
+    geom_bar(fill = "green") +
+    labs(
+      title = "Distribution of Race and Ethnicity",
+      x = "Race/Ethnicity",
+      y = "Count") +
+    theme_classic()
+  
