@@ -33,3 +33,59 @@ HINTSData_2020_clean %>%
     Age_mean = mean(Age, na.rm = TRUE), 
     Age_sd = sd(Age, na.rm = TRUE),
     Age_var = var(Age, na.rm = TRUE),  )
+
+HINTSData_2020_clean %>%
+  group_by(smokeStat) %>%
+  summarise(
+    BMI_min = min(BMI, na.rm = TRUE),
+    BMI_Q1 = quantile(BMI, 0.25, na.rm = TRUE),
+    BMI_median = median(BMI, na.rm = TRUE),
+    BMI_Q3 = quantile(BMI, 0.75, na.rm = TRUE),
+    BMI_max = max(BMI, na.rm = TRUE),
+    BMI_mean = mean(BMI, na.rm = TRUE),
+    BMI_sd = sd(BMI, na.rm = TRUE),
+    BMI_var = var(BMI, na.rm = TRUE), )
+
+HINTSData_2020_clean %>%
+  group_by(smokeStat) %>%
+  summarise(
+    Exercise_min = min(WeeklyMinutesModerateExercise, na.rm = TRUE),
+    Exercise_Q1 = quantile(WeeklyMinutesModerateExercise, 0.25, na.rm = TRUE),
+    Exercise_median = median(WeeklyMinutesModerateExercise, na.rm = TRUE),
+    Exercise_Q3 = quantile(WeeklyMinutesModerateExercise, 0.75, na.rm = TRUE),
+    Exercise_max = max(WeeklyMinutesModerateExercise, na.rm = TRUE),
+    Exercise_mean = mean(WeeklyMinutesModerateExercise, na.rm = TRUE),
+    Exercise_sd = sd(WeeklyMinutesModerateExercise, na.rm = TRUE),
+    Exercise_var = var(WeeklyMinutesModerateExercise, na.rm = TRUE),)
+
+HINTSData_2020_clean %>%
+  group_by(smokeStat) %>%
+  summarise(
+    Drinks_Q1 = quantile(AvgDrinksPerWeek, 0.25, na.rm = TRUE),
+    Drinks_median = median(AvgDrinksPerWeek, na.rm = TRUE),
+    Drinks_Q3 = quantile(AvgDrinksPerWeek, 0.75, na.rm = TRUE),
+    Drinks_max = max(AvgDrinksPerWeek, na.rm = TRUE),
+    Drinks_mean = mean(AvgDrinksPerWeek, na.rm = TRUE),
+    Drinks_sd = sd(AvgDrinksPerWeek, na.rm = TRUE),
+    Drinks_var = var(AvgDrinksPerWeek, na.rm = TRUE) )
+
+#skim
+skim(HINTSData_2020_clean[, c("Age", "BMI", "WeeklyMinutesModerateExercise", "AvgDrinksPerWeek")])
+
+#my_summary_func
+my_summary_func <- function(x) {
+   summary_stats <- c(
+    Min = min(x),
+    Q1 = quantile(x, 0.25),
+    Median = median(x),
+    Mean = mean(x),
+    Q3 = quantile(x, 0.75),
+    Max = max(x),
+    SD = sd(x)
+  )
+   return(summary_stats)}
+#Results of summaries of B1
+my_summary_func(HINTSData_2020_clean$Age)
+my_summary_func(HINTSData_2020_clean$BMI)
+my_summary_func(HINTSData_2020_clean$WeeklyMinutesModerateExercise)
+my_summary_func(HINTSData_2020_clean$AvgDrinksPerWeek)
