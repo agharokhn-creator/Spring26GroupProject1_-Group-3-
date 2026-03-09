@@ -141,7 +141,7 @@ my_visual_func_I <- function(data) {
       labs(title = "Distribution of Age", x = "Age", y = "Frequency") +
       theme_minimal()
   }
-  my_visual_func_I(HINTSData_2020_clean)
+  my_visual_func_I(HINTSData_2020_clean) 
 
   my_visual_func_II <- function(data) {
     ggplot(data, aes(y = BMI)) +
