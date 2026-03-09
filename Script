@@ -121,3 +121,9 @@ ggplot(HINTSData_2020_clean, aes(y = BMI)) +
       y = "BMI" ) +
     theme_minimal()
   
+ggplot(HINTSData_2020_clean, aes(x = Age)) +
+    geom_histogram(binwidth = 5,
+                   fill = "grey",
+                   color = "black") +
+    labs(title = "Distribution of Age", x = "Age", y = "Frequency") +
+    theme_classic()
