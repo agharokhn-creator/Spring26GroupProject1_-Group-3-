@@ -38,8 +38,9 @@ sd(HINTSData_2020_clean$AvgDrinksPerWeek)
 #Variance of drinks per week
 var(HINTSData_2020_clean$AvgDrinksPerWeek)
 
-HINTSData_2020_clean %>%
-  group_by(smokeStat) %>%
+#Descriptive Statistics for age grouped by smoking status
+HINTSData_2020_clean %>%  
+  group_by(smokeStat) %>%  #Group respondents by smoking status
   summarise(
     Age_min = min(Age, na.rm = TRUE),
     Age_Q1 = quantile(Age, 0.25, na.rm = TRUE),
