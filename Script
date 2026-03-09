@@ -71,7 +71,7 @@ HINTSData_2020_clean %>%
 
 #skim
 skim(HINTSData_2020_clean[, c("Age", "BMI", "WeeklyMinutesModerateExercise", "AvgDrinksPerWeek")])
-
+ 
 #my_summary_func
 my_summary_func <- function(x) {
    summary_stats <- c(
