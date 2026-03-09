@@ -143,7 +143,7 @@ my_visual_func_I <- function(data) {
   }
   my_visual_func_I(HINTSData_2020_clean) 
 
-  my_visual_func_II <- function(data) {
+  my_visual_func_II <- function(data) { 
     ggplot(data, aes(y = BMI)) +
       geom_boxplot(fill = "purple") +
       labs(title = "Distribution of BMI", y = "BMI") +
