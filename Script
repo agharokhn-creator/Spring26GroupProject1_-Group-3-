@@ -1,7 +1,11 @@
 #Age
+#Five-number summary for age
 fivenum(HINTSData_2020_clean$Age) #18  43  58  68 100
+#Mean age of respondents
 mean(HINTSData_2020_clean$Age) #55.59117
+#Standard deviation of age (minimum, Q1, median, Q3, maximum)
 sd(HINTSData_2020_clean$Age) #16.57902
+#Variance of Age
 var(HINTSData_2020_clean$Age) #274.864 
 
 #BMI
