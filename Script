@@ -114,7 +114,7 @@ my_summary_func(HINTSData_2020_clean$AvgDrinksPerWeek)
 
 #Univariate Visualization
 
-library(ggplot2)
+library(ggplot2) #loading ggplot2 package to be able to create the visualizations
   
 ggplot(HINTSData_2020_clean, aes(x = QualityCare)) +
     geom_bar(fill = "black") +
