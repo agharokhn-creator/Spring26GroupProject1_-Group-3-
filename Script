@@ -1,42 +1,42 @@
 #Age
 #Five-number summary for age
-fivenum(HINTSData_2020_clean$Age) #18  43  58  68 100
+fivenum(HINTSData_2020_clean$Age)
 #Mean age of respondents
-mean(HINTSData_2020_clean$Age) #55.59117
+mean(HINTSData_2020_clean$Age) 
 #Standard deviation of age (minimum, Q1, median, Q3, maximum)
-sd(HINTSData_2020_clean$Age) #16.57902
+sd(HINTSData_2020_clean$Age) 
 #Variance of Age
-var(HINTSData_2020_clean$Age) #274.864 
+var(HINTSData_2020_clean$Age)
 
 #BMI
 #Five-number summary for BMI
-fivenum(HINTSData_2020_clean$BMI)#10.9 24.0 27.5 31.9 73.8
+fivenum(HINTSData_2020_clean$BMI)
 #Mean BMI of respondents
-mean(HINTSData_2020_clean$BMI)#28.60704
+mean(HINTSData_2020_clean$BMI)
 #Standard deviation of BMI
-sd(HINTSData_2020_clean$BMI)#6.538369
+sd(HINTSData_2020_clean$BMI)
 #Variance of BMI
-var(HINTSData_2020_clean$BMI)#42.75028
+var(HINTSData_2020_clean$BMI)
 
 #Weekly minutes of exercise
 #Five-number summary for exercise minutes per week
-fivenum(HINTSData_2020_clean$WeeklyMinutesModerateExercise)#  0    0   90  210 4620
+fivenum(HINTSData_2020_clean$WeeklyMinutesModerateExercise)
 #Average minutes of exercise per week
-mean(HINTSData_2020_clean$WeeklyMinutesModerateExercise)#161.7818
+mean(HINTSData_2020_clean$WeeklyMinutesModerateExercise)
 #Standard deviation of exercise minutes
-sd(HINTSData_2020_clean$WeeklyMinutesModerateExercise)#271.1893
+sd(HINTSData_2020_clean$WeeklyMinutesModerateExercise)
 #Variance of exercise minutes
-var(HINTSData_2020_clean$WeeklyMinutesModerateExercise)#73543.61
+var(HINTSData_2020_clean$WeeklyMinutesModerateExercise)
 
 #Average drinks per week
 #Five-number summary for drinks per week
-fivenum(HINTSData_2020_clean$AvgDrinksPerWeek)#0  0  0  4 70
+fivenum(HINTSData_2020_clean$AvgDrinksPerWeek)
 #Mean number of drinks consumed per week
-mean(HINTSData_2020_clean$AvgDrinksPerWeek)#3.358035
+mean(HINTSData_2020_clean$AvgDrinksPerWeek)
 #Standard deviation of drinks per week
-sd(HINTSData_2020_clean$AvgDrinksPerWeek)#6.588142
+sd(HINTSData_2020_clean$AvgDrinksPerWeek)
 #Variance of drinks per week
-var(HINTSData_2020_clean$AvgDrinksPerWeek)#43.40362
+var(HINTSData_2020_clean$AvgDrinksPerWeek)
 
 HINTSData_2020_clean %>%
   group_by(smokeStat) %>%
