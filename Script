@@ -89,9 +89,10 @@ HINTSData_2020_clean %>%
     Drinks_sd = sd(AvgDrinksPerWeek, na.rm = TRUE),
     Drinks_var = var(AvgDrinksPerWeek, na.rm = TRUE) )
 
-#skim
+#Use skimr package to generate a statistical summary for the continuous variables
 skim(HINTSData_2020_clean[, c("Age", "BMI", "WeeklyMinutesModerateExercise", "AvgDrinksPerWeek")])
- 
+#Custom function to calculate key summary statistics 
+#Returns: min, quartiles, median, mean, max, and SD
 #my_summary_func
 my_summary_func <- function(x) {
    summary_stats <- c( 
