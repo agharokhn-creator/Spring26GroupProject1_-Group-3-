@@ -19,15 +19,23 @@ sd(HINTSData_2020_clean$BMI)#6.538369
 var(HINTSData_2020_clean$BMI)#42.75028
 
 #Weekly minutes of exercise
+#Five-number summary for exercise minutes per week
 fivenum(HINTSData_2020_clean$WeeklyMinutesModerateExercise)#  0    0   90  210 4620
+#Average minutes of exercise per week
 mean(HINTSData_2020_clean$WeeklyMinutesModerateExercise)#161.7818
+#Standard deviation of exercise minutes
 sd(HINTSData_2020_clean$WeeklyMinutesModerateExercise)#271.1893
+#Variance of exercise minutes
 var(HINTSData_2020_clean$WeeklyMinutesModerateExercise)#73543.61
 
 #Average drinks per week
+#Five-number summary for drinks per week
 fivenum(HINTSData_2020_clean$AvgDrinksPerWeek)#0  0  0  4 70
+#Mean number of drinks consumed per week
 mean(HINTSData_2020_clean$AvgDrinksPerWeek)#3.358035
+#Standard deviation of drinks per week
 sd(HINTSData_2020_clean$AvgDrinksPerWeek)#6.588142
+#Variance of drinks per week
 var(HINTSData_2020_clean$AvgDrinksPerWeek)#43.40362
 
 HINTSData_2020_clean %>%
