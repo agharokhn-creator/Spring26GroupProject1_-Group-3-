@@ -74,7 +74,7 @@ skim(HINTSData_2020_clean[, c("Age", "BMI", "WeeklyMinutesModerateExercise", "Av
  
 #my_summary_func
 my_summary_func <- function(x) {
-   summary_stats <- c(
+   summary_stats <- c( 
     Min = min(x),
     Q1 = quantile(x, 0.25),
     Median = median(x),
