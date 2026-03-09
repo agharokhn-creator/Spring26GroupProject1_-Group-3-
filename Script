@@ -196,11 +196,15 @@ my_visual_func_I <- function(data) { #creating a function to create a histogram 
 #Due to their being many bars, only the trend shown will be discussed
 #Based on the histogram, majority of the participants fall between 50 to 75 years old, with majority being about 60 years old
 
-  my_visual_func_II <- function(data) { 
-    ggplot(data, aes(y = BMI)) +
-      geom_boxplot(fill = "purple") +
-      labs(title = "Distribution of BMI", y = "BMI") +
-      theme_minimal() 
+  my_visual_func_II <- function(data) { #creating a function to create a boxplot for BMI
+    ggplot(data, aes(y = BMI)) + #using dataset that's given in the function and putting BMI on the y-axis
+      geom_boxplot(fill = "purple") + #creating the boxplot and adding color to the boxplot
+      labs(title = "Distribution of BMI", y = "BMI") + #adding a title and labeling the y-axis
+      theme_minimal() #applying a visual theme
   }
   
-  my_visual_func_II(HINTSData_2020_clean)
+  my_visual_func_II(HINTSData_2020_clean) #running the function with the dataset
+#The boxplot gives a summary of the distribution of the BMI of the participants
+#The median BMI is about 27
+#The range is between about 3 to about 75
+#The range does include the outlier of about 3 and about 
