@@ -143,12 +143,15 @@ ggplot(HINTSData_2020_clean, aes(x = RaceEthn5)) + #setting the data and putting
 #Based on the bar chart, about 25 partcipants are a part of the fourth racial group
 #Majority of the particiapants are a part of the first racial group
   
-ggplot(HINTSData_2020_clean, aes(x = Age)) +
-    geom_histogram(binwidth = 5,
-                   fill = "blue",
-                   color = "black") +
-    labs(title = "Age Distribution", x = "Age", y = "Frequency") +
-    theme_classic()
+ggplot(HINTSData_2020_clean, aes(x = Age)) + #setting the data and putting Age on the x-axis
+    geom_histogram(binwidth = 5, #adding a width to each bin of 5 units
+                   fill = "blue", #adding color to the bars
+                   color = "black") + #adding a border color to the bars
+    labs(title = "Age Distribution", x = "Age", y = "Frequency") + #labeling the title, x-axis, and y-axis
+    theme_classic() #applying a visual theme
+#The histogram shows the range of the participants ages, with each bar having a range of 5 years
+#Due to their being many bars, only the trend shown will be discussed
+#Based on the histogram, majority of the participants fall between 50 to 75 years old, with majority being about 60 years old
 
 ggplot(HINTSData_2020_clean, aes(y = BMI)) + 
     geom_boxplot(fill = "darkgreen") +
