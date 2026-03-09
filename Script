@@ -116,10 +116,17 @@ my_summary_func(HINTSData_2020_clean$AvgDrinksPerWeek)
 
 library(ggplot2) #loading ggplot2 package to be able to create the visualizations
   
-ggplot(HINTSData_2020_clean, aes(x = QualityCare)) +
-    geom_bar(fill = "black") +
-    labs(title = "Distribution of Quality of Care Ratings", x = "Quality of Care", y = "Count") +
-    theme_classic
+ggplot(HINTSData_2020_clean, aes(x = QualityCare)) + #setting the data and putting QualityCare on the x-axis
+    geom_bar(fill = "black") + #making bars to show the amount per category
+    labs(title = "Distribution of Quality of Care Ratings", x = "Quality of Care", y = "Count") + #adding labels and title
+    theme_classic #applying a visual theme
+#The bar chart is meant to display how many participants gave each rating
+#Based on the bar chart, about 750 participants gave a rating of 1
+#Based on the bar chart, about 1000 participants gave a rating of 2
+#Based on the bar chart, about 400 participants gave a rating of 3
+#Based on the bar chart, about 100 participants gave a rating of 4
+#Based on the bar chart, about 20 participants gave a rating of 5
+#Majority of participants gave a QualityCare rating of 2, based on the bar chart
 
 ggplot(HINTSData_2020_clean, aes(x = RaceEthn5)) +
     geom_bar(fill = "green") +
