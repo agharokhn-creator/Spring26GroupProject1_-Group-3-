@@ -106,6 +106,7 @@ my_summary_func <- function(x) {
   )
    return(summary_stats)}
 #Results of summaries of B1
+#Apply custom summary function to each continuous variable
 my_summary_func(HINTSData_2020_clean$Age)
 my_summary_func(HINTSData_2020_clean$BMI)
 my_summary_func(HINTSData_2020_clean$WeeklyMinutesModerateExercise)
