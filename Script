@@ -183,15 +183,18 @@ ggplot(HINTSData_2020_clean, aes(y = BMI)) + #setting the data and putting BMI o
 #The range is between about 3 to about 75
 #The range does include the outlier of about 3 and about 75
 
-my_visual_func_I <- function(data) {
-    ggplot(data, aes(x = Age)) +
-      geom_histogram(binwidth = 5,
-                     fill = "blue",
-                     color = "black") +
-      labs(title = "Distribution of Age", x = "Age", y = "Frequency") +
-      theme_minimal()
+my_visual_func_I <- function(data) { #creating a function to create a histogram for Age
+    ggplot(data, aes(x = Age)) + #using dataset that's given in the function and putting Age on the x-axis
+      geom_histogram(binwidth = 5, #putting the width of each bin to 5 units
+                     fill = "blue", #adding color to the bars
+                     color = "black") + #adding a border color to the bars
+      labs(title = "Distribution of Age", x = "Age", y = "Frequency") + #adding a title, labeling the x-axis, and labeling the y-axis
+      theme_minimal() #applying a visual theme
   }
-  my_visual_func_I(HINTSData_2020_clean) 
+  my_visual_func_I(HINTSData_2020_clean) #running the function with the dataset
+#The histogram shows the range of the participants ages, with each bar having a range of 5 years
+#Due to their being many bars, only the trend shown will be discussed
+#Based on the histogram, majority of the participants fall between 50 to 75 years old, with majority being about 60 years old
 
   my_visual_func_II <- function(data) { 
     ggplot(data, aes(y = BMI)) +
