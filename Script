@@ -127,3 +127,8 @@ ggplot(HINTSData_2020_clean, aes(x = Age)) +
                    color = "black") +
     labs(title = "Distribution of Age", x = "Age", y = "Frequency") +
     theme_classic()
+
+ggplot(HINTSData_2020_clean, aes(y = BMI)) +
+    geom_boxplot(fill = "purple") +
+    labs(title = "Distribution of BMI", y = "BMI") +
+    theme_minimal()
