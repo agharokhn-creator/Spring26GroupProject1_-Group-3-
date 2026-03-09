@@ -114,7 +114,7 @@ ggplot(HINTSData_2020_clean, aes(x = Age)) +
     labs(title = "Age Distribution", x = "Age", y = "Frequency") +
     theme_classic()
 
-ggplot(HINTSData_2020_clean, aes(y = BMI)) +
+ggplot(HINTSData_2020_clean, aes(y = BMI)) + 
     geom_boxplot(fill = "darkgreen") +
     labs(
       title = "BMI Distribution",
