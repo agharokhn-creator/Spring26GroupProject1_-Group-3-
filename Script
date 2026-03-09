@@ -132,3 +132,22 @@ ggplot(HINTSData_2020_clean, aes(y = BMI)) +
     geom_boxplot(fill = "purple") +
     labs(title = "Distribution of BMI", y = "BMI") +
     theme_minimal()
+
+my_visual_func_I <- function(data) {
+    ggplot(data, aes(x = Age)) +
+      geom_histogram(binwidth = 5,
+                     fill = "blue",
+                     color = "black") +
+      labs(title = "Distribution of Age", x = "Age", y = "Frequency") +
+      theme_minimal()
+  }
+  my_visual_func_I(HINTSData_2020_clean)
+
+  my_visual_func_II <- function(data) {
+    ggplot(data, aes(y = BMI)) +
+      geom_boxplot(fill = "purple") +
+      labs(title = "Distribution of BMI", y = "BMI") +
+      theme_minimal()
+  }
+  
+  my_visual_func_II(HINTSData_2020_clean)
