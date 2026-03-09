@@ -51,6 +51,7 @@ HINTSData_2020_clean %>%
     Age_sd = sd(Age, na.rm = TRUE),  #Standard deviation
     Age_var = var(Age, na.rm = TRUE),  )  #Variance
 
+#Descriptive statistics for BMI grouped by smoking status
 HINTSData_2020_clean %>%
   group_by(smokeStat) %>%
   summarise(
@@ -63,6 +64,7 @@ HINTSData_2020_clean %>%
     BMI_sd = sd(BMI, na.rm = TRUE),
     BMI_var = var(BMI, na.rm = TRUE), )
 
+#Descriptive Statistics for exercise minutes grouped by smoking status
 HINTSData_2020_clean %>%
   group_by(smokeStat) %>%
   summarise(
@@ -75,6 +77,7 @@ HINTSData_2020_clean %>%
     Exercise_sd = sd(WeeklyMinutesModerateExercise, na.rm = TRUE),
     Exercise_var = var(WeeklyMinutesModerateExercise, na.rm = TRUE),)
 
+#Descriptive Statistics for alcohol consumption grouped by smoking status 
 HINTSData_2020_clean %>%
   group_by(smokeStat) %>%
   summarise(
